@@ -81,9 +81,6 @@ public class SistemaAcademico {
         entrada.close();
     }
 
-    // =========================================
-    // REGISTRAR ESTUDIANTE
-    // =========================================
 
     public static void registrarEstudiante() {
 
@@ -105,9 +102,7 @@ public class SistemaAcademico {
         System.out.println("\nEstudiante registrado correctamente.");
     }
 
-    // =========================================
-    // REGISTRAR PROFESOR
-    // =========================================
+   
 
     public static void registrarProfesor() {
 
@@ -129,9 +124,7 @@ public class SistemaAcademico {
         System.out.println("\nProfesor registrado correctamente.");
     }
 
-    // =========================================
-    // REGISTRAR MATERIA
-    // =========================================
+    
 
     public static void registrarMateria() {
 
@@ -169,9 +162,7 @@ public class SistemaAcademico {
         System.out.println("\nMateria registrada correctamente.");
     }
 
-    // =========================================
-    // CALIFICAR ESTUDIANTE (con materia + varias notas seguidas)
-    // =========================================
+
 
     public static void calificarEstudiante() {
 
@@ -239,7 +230,7 @@ public class SistemaAcademico {
         } while (continuar.equalsIgnoreCase("s"));
     }
 
-    // Muestra los profesores y devuelve el elegido (o null si la opción no es válida)
+ 
     private static Profesor seleccionarProfesor() {
 
         System.out.println("\nProfesores:");
@@ -259,7 +250,6 @@ public class SistemaAcademico {
         return profesores.get(pos - 1);
     }
 
-    // Muestra solo las materias que dicta el profesor indicado y devuelve la elegida
     private static Materia seleccionarMateria(Profesor profesor) {
 
         ArrayList<Materia> materiasDelProfesor = new ArrayList<>();
@@ -292,7 +282,7 @@ public class SistemaAcademico {
         return materiasDelProfesor.get(pos - 1);
     }
 
-    // Muestra los estudiantes y devuelve el elegido
+    
     private static Estudiante seleccionarEstudiante() {
 
         System.out.println("\nEstudiantes:");
@@ -312,16 +302,12 @@ public class SistemaAcademico {
         return estudiantes.get(pos - 1);
     }
 
-    // Detiene el programa hasta que el usuario presione ENTER,
-    // para que la información no desaparezca al redibujar el menú
+    
     private static void pausar() {
         System.out.print("\nPresiona ENTER para volver al menú...");
         entrada.nextLine();
     }
 
-    // =========================================
-    // VER CALIFICACIONES (agrupadas por estudiante y por materia, con promedio por materia)
-    // =========================================
 
     public static void verCalificaciones() {
 
@@ -385,10 +371,7 @@ public class SistemaAcademico {
         pausar();
     }
 
-    // =========================================
-    // VER ESTUDIANTES
-    // =========================================
-
+    
     public static void verEstudiantes() {
 
         System.out.println("\n--- ESTUDIANTES ---");
@@ -408,10 +391,7 @@ public class SistemaAcademico {
         pausar();
     }
 
-    // =========================================
-    // VER PROFESORES
-    // =========================================
-
+   
     public static void verProfesores() {
 
         System.out.println("\n--- PROFESORES ---");
@@ -431,10 +411,7 @@ public class SistemaAcademico {
         pausar();
     }
 
-    // =========================================
-    // VER MATERIAS
-    // =========================================
-
+ 
     public static void verMaterias() {
 
         System.out.println("\n--- MATERIAS ---");
